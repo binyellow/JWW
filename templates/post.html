@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+{#    <link rel="stylesheet" href="/static/css/index.css">#}
+</head>
+<body>
+    <h1>用户展示：</h1>
+    <table border="1">
+        <thead>
+            <th>课程</th>
+            <th>成绩</th>
+            <th>学分</th>
+        </thead>
+        <tbody>
+            {% for each in data %}
+                <tr>
+                    <td>{{ each.kc }}</td>
+                    <td>{{ each.cj }}</td>
+                    <td>{{ each.xf }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

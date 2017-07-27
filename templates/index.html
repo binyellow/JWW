@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <h1>用户输入：</h1>
+    <form action="/index/" method="post">
+        <label for="username">学号：</label>
+        <input type="text" name="username"><br>
+        <label for="password">密码：</label>
+        <input type="text" name="password">
+        <img src="/static/imgs/checkcode.png"><br>
+        <label for="checkcode">验证码</label>
+        <input type="text" name="checkcode">
+        <input type="submit" value="提交">
+    </form>
+{#    <h1>用户展示：</h1>#}
+{#    <table border="1">#}
+{#        <thead>#}
+{#            <th>用户名</th>#}
+{#            <th>密码</th>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#            {% for line in data %}#}
+{#                <tr>#}
+{#                    <td>{{ line.user }}</td>#}
+{#                    <td>{{ line.pwd }}</td>#}
+{#                </tr>#}
+{#            {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
+</body>
+</html>
